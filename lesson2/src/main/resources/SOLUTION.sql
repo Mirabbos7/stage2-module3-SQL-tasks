@@ -1,4 +1,4 @@
-INSERT INTO Student (id, name, birthday, "group") VALUES
+INSERT INTO STUDENT (id, name, birthday, group) VALUES
 (1, 'John', '2010-01-01', 1),
 (2, 'Chris', '2010-02-02', 1),
 (3, 'Carl', '2010-03-03', 1),
@@ -13,8 +13,8 @@ INSERT INTO Student (id, name, birthday, "group") VALUES
 (12, 'Charlie', '2006-01-01', 5),
 (13, 'Diana', '2006-02-02', 5);
 
--- Insert Subjects
-INSERT INTO Subject (id, name, description, grade) VALUES
+
+INSERT INTO SUBJECT (id, name, description, grade) VALUES
 (1, 'Art', 'Art description', 1),
 (2, 'Music', 'Music description', 1),
 (3, 'Geography', 'Geography description', 2),
@@ -26,14 +26,12 @@ INSERT INTO Subject (id, name, description, grade) VALUES
 (9, 'English', 'English description', 5),
 (10, 'Physics', 'Physics description', 5);
 
--- Insert Payment Types
-INSERT INTO PaymentType (id, name) VALUES
+INSERT INTO PAYMENTTYPE (id, name) VALUES
 (1, 'DAILY'),
 (2, 'WEEKLY'),
 (3, 'MONTHLY');
 
--- Insert Payments
-INSERT INTO Payment (id, type_id, amount, payment_date, student_id) VALUES
+INSERT INTO PAYMENT (id, type_id, amount, payment_date, student_id) VALUES
 (1, 2, 100.00, '2023-06-01', 1),
 (2, 3, 200.00, '2023-06-02', 4),
 (3, 2, 150.00, '2023-06-03', 7),
@@ -44,7 +42,7 @@ INSERT INTO Payment (id, type_id, amount, payment_date, student_id) VALUES
 (8, 3, 225.00, '2023-06-08', 9);
 
 
-INSERT INTO Mark (id, student_id, subject_id, mark) VALUES
+INSERT INTO MARK (id, student_id, subject_id, mark) VALUES
 (1, 2, 1, 8),
 (2, 4, 4, 5),
 (3, 5, 3, 9),
