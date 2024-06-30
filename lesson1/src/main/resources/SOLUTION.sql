@@ -2,7 +2,7 @@ CREATE TABLE STUDENT (
                          id BIGINT PRIMARY KEY,
                          name VARCHAR(255),
                          birthday DATE,
-                         group1 INT
+                         group INT
 );
 CREATE TABLE SUBJECT (
                          id BIGINT PRIMARY KEY,
