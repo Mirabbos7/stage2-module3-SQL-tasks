@@ -8,17 +8,17 @@ WHERE birthday <= DATEADD('YEAR', -20, PARSEDATETIME('20001010', 'yyyyMMdd'));
 
 SELECT *
 FROM Student
-WHERE group_id = 10
+WHERE GROUPNUMBER = 10
   AND birthday > DATEADD('YEAR', -20, PARSEDATETIME('20001010', 'yyyyMMdd'));
 
 SELECT *
 FROM Student
 WHERE name = 'Mike'
-   OR group_id IN (4, 5, 6);
+   OR GROUPNUMBER IN (4, 5, 6);
 
 SELECT *
 FROM Payment
-WHERE date >= DATEADD('MONTH', -8, PARSEDATETIME('20001010', 'yyyyMMdd'));
+WHERE PAYMENT_DATE >= DATEADD('MONTH', -8, PARSEDATETIME('20001010', 'yyyyMMdd'));
 
 SELECT *
 FROM Student
@@ -26,5 +26,5 @@ WHERE name LIKE 'A%';
 
 SELECT *
 FROM Student
-WHERE (name = 'Roxi' AND group_id = 4)
-   OR (name = 'Tallie' AND group_id = 9);
+WHERE (name = 'Roxi' AND GROUPNUMBER = 4)
+   OR (name = 'Tallie' AND GROUPNUMBER = 9);

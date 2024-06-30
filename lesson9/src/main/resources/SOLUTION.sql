@@ -21,7 +21,7 @@ FROM Student s
          JOIN (
     SELECT student_id
     FROM Payment
-    WHERE YEAR(date) = 2019
+    WHERE YEAR(PAYMENT_DATE) = 2019
     GROUP BY student_id
     HAVING COUNT(*) > 2
 ) AS payment_counts ON s.id = payment_counts.student_id;

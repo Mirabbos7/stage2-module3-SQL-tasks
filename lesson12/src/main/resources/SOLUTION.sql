@@ -1,5 +1,5 @@
 DELETE FROM Student
-WHERE grade >= 4;
+WHERE GROUPNUMBER >= 4;
 
 DELETE FROM Student
 WHERE id IN (

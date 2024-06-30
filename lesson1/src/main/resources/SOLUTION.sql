@@ -1,9 +1,13 @@
-
+DROP TABLE IF EXISTS STUDENT;
+DROP TABLE IF EXISTS subject;
+DROP TABLE IF EXISTS paymenttype;
+DROP TABLE IF EXISTS mark;
+DROP TABLE IF EXISTS payment;
 CREATE TABLE student
 (
     id BIGINT NOT NULL PRIMARY KEY,
     name VARCHAR(45),
-    birthday DATE NOT NULL,
+    birthday DATE,
     groupnumber INT NOT NULL
 );
 CREATE TABLE subject

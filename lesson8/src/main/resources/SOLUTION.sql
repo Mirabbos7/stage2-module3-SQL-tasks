@@ -1,7 +1,7 @@
 SELECT MIN(birthday) AS youngest_birthday
 FROM Student;
 
-SELECT MIN(date) AS earliest_payment_date
+SELECT MIN(PAYMENT_DATE) AS earliest_payment_date
 FROM Payment;
 
 SELECT AVG(m.mark) AS average_math_mark
