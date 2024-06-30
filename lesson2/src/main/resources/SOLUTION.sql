@@ -27,15 +27,15 @@ INSERT INTO paymenttype (id, name) VALUES ( 1, 'DAILY' );
 INSERT INTO paymenttype (id, name) VALUES ( 2, 'WEEKLY' );
 INSERT INTO paymenttype (id, name) VALUES ( 3, 'MONTHLY' );
 
-INSERT INTO payment (type_id, student_id, AMOUNT, PAYMENT_DATE) VALUES ( 2, 14432, 123, '2021-07-02 18:45:36');
-INSERT INTO payment (type_id, student_id, AMOUNT, PAYMENT_DATE) VALUES ( 3, 4556 , 132156, '2099-12-13 20:09:17');
-INSERT INTO payment (type_id, student_id, AMOUNT, PAYMENT_DATE) VALUES ( 2, 7243432, 45, '2017-12-23 05:27:57');
-INSERT INTO payment (type_id, student_id, AMOUNT, PAYMENT_DATE) VALUES ( 1, 5546554 , 8, '2020-12-10 19:54:36');
-INSERT INTO payment (type_id, student_id, AMOUNT, PAYMENT_DATE) VALUES ( 2, 1022543 , 9, '2018-12-18 11:00:51');
+INSERT INTO payment (type_id, student_id, AMOUNT, PAYMENT_DATE) VALUES ( 2, 51564, 123, '2021-07-02 18:45:36');
+INSERT INTO payment (type_id, student_id, AMOUNT, PAYMENT_DATE) VALUES ( 3, 3124 , 132156, '2099-12-13 20:09:17');
+INSERT INTO payment (type_id, student_id, AMOUNT, PAYMENT_DATE) VALUES ( 2, 3242, 45, '2017-12-23 05:27:57');
+INSERT INTO payment (type_id, student_id, AMOUNT, PAYMENT_DATE) VALUES ( 1, 2432 , 8, '2020-12-10 19:54:36');
+INSERT INTO payment (type_id, student_id, AMOUNT, PAYMENT_DATE) VALUES ( 2, 3421 , 9, '2018-12-18 11:00:51');
 
-INSERT INTO mark (mark, student_id, subject_id, id ) VALUES ( 8, 24532, 1423, 545646 );
-INSERT INTO mark (mark, student_id, subject_id,ID) VALUES ( 5, 4543, 4543, 46546 );
-INSERT INTO mark (mark, student_id, subject_id, ID) VALUES ( 9, 5523, 3654 , 98794);
-INSERT INTO mark (mark, student_id, subject_id, ID) VALUES ( 4, 8534, 6757, 13985 );
-INSERT INTO mark (mark, student_id, subject_id, ID) VALUES ( 9, 9656, 5243 , 49746);
-INSERT INTO mark (mark, student_id, subject_id, ID) VALUES ( 3, 1657, 2656, 13649 );
+INSERT INTO mark (mark, student_id, subject_id, id ) VALUES ( 8, 12232, 1, 545646 );
+INSERT INTO mark (mark, student_id, subject_id,ID) VALUES ( 5, 3124, 4, 46546 );
+INSERT INTO mark (mark, student_id, subject_id, ID) VALUES ( 9, 2432, 3 , 98794);
+INSERT INTO mark (mark, student_id, subject_id, ID) VALUES ( 4, 8432, 6, 13985 );
+INSERT INTO mark (mark, student_id, subject_id, ID) VALUES ( 9, 9432, 5 , 49746);
+INSERT INTO mark (mark, student_id, subject_id, ID) VALUES ( 3, 3421, 10, 13649 );
