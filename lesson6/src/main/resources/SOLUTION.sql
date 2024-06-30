@@ -1,5 +1,5 @@
 SELECT *
-FROM Payment
+FROM PAYMENT
 WHERE type_id = (SELECT id FROM PaymentType WHERE name = 'MONTHLY');
 
 SELECT m.*

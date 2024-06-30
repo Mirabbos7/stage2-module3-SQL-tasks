@@ -2,8 +2,8 @@ SELECT s.*
 FROM Subject s
          JOIN (
     SELECT subject_id, AVG(mark) AS avg_subject_mark
-    FROM Mark
-    GROUP BY subject_id
+        FROM Mark
+        GROUP BY subject_id
 ) AS avg_marks_per_subject ON s.id = avg_marks_per_subject.subject_id
 WHERE avg_marks_per_subject.avg_subject_mark > (
     SELECT AVG(mark) AS avg_mark_all_subjects

@@ -7,17 +7,17 @@ FROM Student s
     HAVING AVG(mark) > 8
 ) AS avg_marks ON s.id = avg_marks.student_id;
 
-SELECT s.id, s.name
-FROM Student s
+SELECT id, name
+    FROM Student s
          JOIN (
     SELECT student_id, MIN(mark) AS min_mark
-    FROM Mark
-    GROUP BY student_id
-    HAVING MIN(mark) > 7
+        FROM Mark
+            GROUP BY student_id
+            HAVING MIN(mark) > 7
 ) AS min_marks ON s.id = min_marks.student_id;
 
 SELECT s.id, s.name
-FROM Student s
+    FROM Student s
          JOIN (
     SELECT student_id
     FROM Payment
