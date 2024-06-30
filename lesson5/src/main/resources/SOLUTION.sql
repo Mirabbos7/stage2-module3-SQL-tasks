@@ -1,20 +1,30 @@
 SELECT *
-FROM Payment
+FROM payment
 WHERE amount >= 500;
+
 SELECT *
 FROM Student
-WHERE DATEDIFF(CURDATE(), birthday) / 365.25 > 20;
+WHERE birthday <= DATEADD('YEAR', -20, PARSEDATETIME('20001010', 'yyyyMMdd'));
+
 SELECT *
 FROM Student
-WHERE group = 10
-    AND DATEDIFF(CURDATE(), birthday) / 365.25 < 20;
+WHERE group_id = 10
+  AND birthday > DATEADD('YEAR', -20, PARSEDATETIME('20001010', 'yyyyMMdd'));
+
 SELECT *
 FROM Student
 WHERE name = 'Mike'
-   OR group IN (4, 5, 6);
+   OR group_id IN (4, 5, 6);
+
 SELECT *
 FROM Payment
-WHERE payment_date >= DATE_SUB(CURDATE(), INTERVAL 8 MONTH);
+WHERE date >= DATEADD('MONTH', -8, PARSEDATETIME('20001010', 'yyyyMMdd'));
+
 SELECT *
 FROM Student
 WHERE name LIKE 'A%';
+
+SELECT *
+FROM Student
+WHERE (name = 'Roxi' AND group_id = 4)
+   OR (name = 'Tallie' AND group_id = 9);

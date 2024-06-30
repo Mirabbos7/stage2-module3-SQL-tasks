@@ -1,23 +1,9 @@
-ALTER TABLE STUDENT
-    ALTER COLUMN birthday SET NOT NULL;
-ALTER TABLE MARK
-    ALTER COLUMN student_id SET NOT NULL;
-
-ALTER TABLE MARK
-    ALTER COLUMN subject_id SET NOT NULL;
-
-ALTER TABLE MARK
-    ALTER COLUMN mark SET NOT NULL;
-
-ALTER TABLE MARK
-    ADD CONSTRAINT chk_mark CHECK (mark BETWEEN 1 AND 10);
-ALTER TABLE SUBJECT
-    ADD CONSTRAINT chk_grade CHECK (grade BETWEEN 1 AND 5);
-ALTER TABLE PAYMENT
-    ALTER COLUMN type_id SET NOT NULL;
-
-ALTER TABLE PAYMENT
-    ALTER COLUMN amount SET NOT NULL;
-
-ALTER TABLE PAYMENT
-    ALTER COLUMN date SET NOT NULL;
+Alter table student MODIFY "birthday" NOT NULL;
+Alter table mark MODIFY "student_id" NOT NULL;
+Alter table mark MODIFY "subject_id" NOT NULL;
+ALTER table mark MODIFY "mark" INT BETWEEN 1 AND 10;
+ALTER table subject MODIFY "grade" INT BETWEEN 1 AND 5;
+ALTER table paymenttype MODIFY "name" VARCHAR(45) UNIQUE;
+Alter table payment MODIFY "amount" NOT NULL;
+Alter table payment MODIFY "type_id" NOT NULL;
+Alter table payment MODIFY "date" NOT NULL;
